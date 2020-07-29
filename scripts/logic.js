@@ -1,3 +1,4 @@
+
 // test cases for your doMath function
 // these are all correct, you don't need to change them
 const doMathTests = [
@@ -34,8 +35,20 @@ function doMath(operation, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
-
-
+  let calculate = 0;
+  if (operation == 'add') {
+    calculate = a + b;
+  }
+  else if (operation == 'min') {
+    calculate = a - b;
+  }
+  else if (operation == 'div') {
+    calculate = a / b;
+  }
+  else if (operation == 'mul') {
+    calculate = a * b;
+  }
+  return calculate;
 
 }
 
