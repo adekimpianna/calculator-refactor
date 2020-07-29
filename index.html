@@ -6,11 +6,40 @@
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
   <script src='./dependencies/testing.js'></script>
+  <script src="./scripts/handler.js"></script>
+  <script src="./scripts/logic.js"></script>
+  
+  <link rel="stylesheet" href="flex.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+  <div class= "row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+    <div class="outer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h1> CALCULATOR MMTUTS</h1>
 
+      <form>
+        Value 1 <input type="text" id="value1" class="inside" >
+        Value 2 <input type="text" id="value2" class="inside">
+        Operator
+        <select id="operator" class="inside" >
+          <option value="add">Add</option>
+          <option value="min">Minus</option>
+          <option value="div">Divide</option>
+          <option value="mul">Multiply</option>
+        </select>
+        <button type="button" id="calculate">CALCULATE</button>
+      </form>
+      
+      <h2>RESULT</h2>
+      <div class="inside result-div">
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./scripts/listener.js"></script>
 </body>
 
 </html>
